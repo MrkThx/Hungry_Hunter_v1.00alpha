@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "UTF-8"></meta>
+        <title>貼文</title>
+        <link rel= "stylesheet" href= "post.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+
+        <div id = "head">
+            <img src = "./material/" id = "title"/>
+        </div>
+        <div id="post" style = "background-color: #fffbcf;">
+            <div id="establish" style = "background-color: #fffbcf;">
+                <img src = "./material/HxH_pointer.svg" id = "pointer"/>
+                <h1 id="establish_word" class="word">建立貼文</h1>
+            </div>
+            <form id = "post_region1" style = "background-color: rgba(255, 251, 207, 1);">
+                <input value="Comment" type="text" name="introduction" id="intro" style = "background-color: rgb(163, 161, 161);"><br>
+                <h1 id="tag_text" class="word">Add Tags:</h1>
+                <h2 id="name_intro" class="word">貼文名稱</h2>
+
+                <input type="text" name="tag1" id="tag1" class="tag" style = "background-color: rgb(163, 161, 161);">
+
+                <br>
+
+                <h2 id="bando_intro" class="word">便當或其他點心？</h2>
+                <input list="bando" type="text" name="tag2" id="tag2" class="tag" style = "background-color: rgb(163, 161, 161);"><br>
+                <datalist id="bando">
+                  <option value="便當">
+                  <option value="其他點心">
+                </datalist>
+
+                <br>
+
+                <h2 id="meat_intro" class="word">葷食或素食？</h2>
+                <input list="meat" type="text" name="tag3" id="tag3" class="tag" style = "background-color: rgb(163, 161, 161);"><br>
+                  <datalist id="meat">
+                    <option value="葷">
+                    <option value="素">
+                  </datalist>
+                <span id="circle1" class="circle"></span>
+                <span id="circle2" class="circle"></span>
+                <span id="circle3" class="circle"></span>
+            </form>
+
+            <form id="post_region2" style = "background-color: rgba(255, 251, 207, 1);">
+              <h2 id="campus_intro" class="word">校區</h2>
+              <input list="campus" type="text" name="tag4" id="tag4" class="tag" style="background-color: rgb(163, 161, 161);">
+              <datalist id="campus">
+                <option value="自強校區">
+                <option value="勝利校區">
+                <option value="光復校區">
+                <option value="成功校區">
+              </datalist>
+              <br>
+              <h2 id="campus_intro2" class="word">地點細項</h2>
+              <input type="text" name="tag5" id="tag5" class="tag" style="background-color: rgb(163, 161, 161);">
+              <br>
+              <h2 id="picture_intro" class="word">請先將圖片上傳至imgur並貼上圖片位址</h2>
+              <input type="text" name="tag6" id="tag6" class="tag" style="background-color: rgb(163, 161, 161);">
+              <span id=circle4 class="circle"></span>
+              <span id=circle5 class="circle"></span>
+              <span id=circle6 class="circle"></span>
+            </form>
+
+            <div id="line1" style="background-color:#123f2d"></div>
+            <span id="icon">
+                <img src="./material/HxH1_food.svg" id = "food_pic" class="pic"/>
+                <img src="./material/HxH2_where.svg" id = "where_pic" class="pic"/>
+                <img src="./material/HxH3_image.svg" id = "image_pic" class="pic"/>
+            </span>
+            <div id="line2" style="background-color:#123f2d"></div>
+            <span id="bottom">
+                <h1 class="word" id="bottom_word">By User</h1>
+                <img src="./material/HxH_post_button.svg" id = "post_button" name = "button"/>
+            </span>
+        </div>
+        <script src= "post.js"></script>
+    </body>
+</html>
